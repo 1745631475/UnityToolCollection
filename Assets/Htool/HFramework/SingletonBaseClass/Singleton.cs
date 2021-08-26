@@ -8,6 +8,7 @@ namespace Htool
     /// <summary>
     /// 单例模式基类（不继承Mono）
     /// </summary>
+    /// <typeparam name="T">返回的实例类型T</typeparam>
     public class Singleton<T> where T : class, new()
     {
         private static T instance;
